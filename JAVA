@@ -1,0 +1,25 @@
+S No 	Questions 	Type	Candidate Experience Level	Difficulty level	Question	Answer	Interview Category (L1/L2)
+	Java						
+1	 What features do you know or use in Java 8?	Definition	3-6 Years	Average			
+2	What is the Difference Between Map and flatMap Stream Operation?	Definition	3-6 Years	Average			
+3	What are the disadvantages of Lambda expression?	Definition	3-6 Years	Average			
+4	What is Optional equals() method in Java?	Definition	3-6 Years	Average			
+5	What is MetaSpace in Java 8?	Definition	3-6 Years	Average			
+6	How to stop thread 		3-6 Years	Average			
+7	What is Sql injection 	Behavioural	3-6 Years	Average			
+8	What are predicate and consumer in Java 8?	Definition	3-6 Years	Average			
+9	Which situation is most suitable for using stream API in Java 8?	Behavioural	3-6 Years	Average			
+10	"What is the difference between limit and skip?
+"	Definition	3-6 Years	Average			
+11	" What is the difference between Stream’s findFirst() and findAny()?.
+"	Definition	3-6 Years	Average			
+12	 What are some advantages of using parallel streams in Java 8?	Behavioural	3-6 Years				
+13	How can we read  1GB file efficiently	Scenario Based	6-9 Years	Complex			
+14	"How has Java evolved over the years, and what are some key features
+ introduced in recent Java versions (Java 8 onwards)?
+"		6-9 Years	Expert			
+15	 How would you read a large file efficiently without running out of memory?	Scenario Based					
+16	How would you detect and prevent memory leaks in a Java application?	Architecture	6-9 Years	Average			
+17	 How would you secure a web application against common vulnerabilities like SQL injection and XSS?	Design	9-12 Years	Complex			
+18	How would you identify and resolve performance bottlenecks in a Java application?	Behavioural	6-9 Years	Complex			
+	Spring Boot 						
