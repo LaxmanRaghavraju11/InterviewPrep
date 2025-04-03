@@ -1,0 +1,158 @@
+Technology	Topic	Type	Candidate Experience Level	Difficulty level	Question	Answer	Interview Category (L1/L2)
+					What is the difference between CHAR and VARCHAR2 datatype in SQL? 	"Both of these data types are used for characters, but varchar2 is used for character strings of variable length, whereas char is used for character strings of fixed length. For example, if we specify the type as char(5) then we will not be allowed to store a string of any other length in this variable, but if we specify the type of this variable as varchar2(5) then we will be allowed to store strings of variable length. We can store a string of length 3 or 4 or 2 in this variable.
+"	
+					What do you mean by data definition language? 	Data definition language or DDL allows to execution of queries like CREATE, DROP, and ALTER. That is those queries that define the data.	
+					What do you mean by data manipulation language?	"Data manipulation Language or DML is used to access or manipulate data in the database. It allows us to perform the below-listed functions: 
+
+Insert data or rows in a database
+Delete data from the database
+Retrieve or fetch data
+Update data in a database."	
+					What is the view in SQL? 	"Views in SQL are a kind of virtual table. A view also has rows and columns as they are on a real table in the database. We can create a view by selecting fields from one or more tables present in the database. A View can either have all the rows of a table or specific rows based on certain conditions.
+CREATE VIEW view_name AS
+SELECT column1, column2.....
+FROM table_name
+WHERE condition;"	
+					What is a Default constraint?	"The DEFAULT constraint is used to fill a column with default and fixed values. The value will be added to all new records when no other value is provided.
+"	
+					What is Auto Increment?	Sometimes, while creating a table, we do not have a unique identifier within the table, hence we face difficulty in choosing Primary Key. So as to resolve such an issue, we’ve to manually provide unique keys to every record, but this is often also a tedious task. So we can use the  Auto-Increment feature that automatically generates a numerical Primary key value for every new record inserted	
+					What is a  stored procedure?	Stored Procedures are created to perform one or more DML operations on databases. It is nothing but a group of SQL statements that accepts some input in the form of parameters and performs some task and may or may not return a value	
+					What is SQL injection?	SQL injection is a technique used to exploit user data through web page inputs by injecting SQL commands as statements. Basically, these statements can be used to manipulate the application’s web server by malicious users.	
+					".SQL injection is a code injection technique that might destroy your database.
+SQL injection is one of the most common web hacking techniques.
+SQL injection is the placement of malicious code in SQL statements, via web page input
+SELECT * FROM STUDENT WHERE
+STUDENT-ID == 12222345 or 1 = 1
+SQL Injection based on 1=1 is always true. As you can see in the above example, 1=1 will return all records for which this holds true. So basically, all the student data is compromised"		
+					What is the difference between BETWEEN and IN operators in SQL? 	"BETWEEN: The BETWEEN operator is used to fetch rows based on a range of values. 
+For example, 
+
+SELECT * FROM Students 
+WHERE ROLL_NO BETWEEN 20 AND 30;
+This query will select all those rows from the table. Students where the value of the field ROLL_NO lies between 20 and 30. 
+IN: The IN operator is used to check for values contained in specific sets. 
+For example, 
+
+SELECT * FROM Students 
+WHERE ROLL_NO IN (20,21,23);"	
+					What is the difference between primary key and unique constraints? 	The primary key cannot have NULL values, the unique constraints can have NULL values. There is only one primary key in a table, but there can be multiple unique constraints	
+					What is a join in SQL? What are the types of joins? 	"An SQL Join statement is used to combine data or rows from two or more tables based on a common field between them. Different types of Joins are: 
+
+INNER JOIN: The INNER JOIN keyword selects all rows from both tables as long as the condition is satisfied. This keyword will create the result set by combining all rows from both the tables where the condition satisfies i.e. the value of the common field will be the same.
+LEFT JOIN: This join returns all the rows of the table on the left side of the join and matching rows for the table on the right side of the join. For the rows for which there is no matching row on the right side, the result set will be null. LEFT JOIN is also known as LEFT OUTER JOIN
+RIGHT JOIN: RIGHT JOIN is similar to LEFT JOIN. This join returns all the rows of the table on the right side of the join and matching rows for the table on the left side of the join. For the rows for which there is no matching row on the left side, the result set will contain null. RIGHT JOIN is also known as RIGHT OUTER JOIN.
+FULL JOIN: FULL JOIN creates the result set by combining the results of both LEFT JOIN and RIGHT JOIN. The result set will contain all the rows from both tables. For the rows for which there is no matching, the result set will contain NULL values.
+"	
+					".WITH clause
+Suppose we have a table named ""orders"" with columns ""order_id,"" ""product_id,"" and ""order_date."" We want to find the total number of orders for each product in the year 2023 using a CTE:"	"WITH ProductOrders AS (
+    SELECT product_id, COUNT(*) AS order_count
+    FROM orders
+    WHERE YEAR(order_date) = 2023
+    GROUP BY product_id
+)
+SELECT product_id, order_count
+FROM ProductOrders
+WHERE product_id IN (1, 2);"	
+					What is a trigger?	The trigger is a statement that a system executes automatically when there is any modification to the database. In a trigger, we first specify when the trigger is to be executed and then the action to be performed when the trigger executes	
+					What is Case WHEN in SQL?	"The CASE statement is SQL’s way of handling if/then logic
+CASE case_value    WHEN when_value THEN statement_list    [WHEN when_value THEN statement_list] …    [ELSE statement_list]END CASE"	
+					What are local and global variables and their differences?	"Global Variable: In contrast, global variables are variables that are defined outside of functions. These variables have global scope, so they can be used by any function without passing them to the function as parameters.
+
+Local Variable: Local variables are variables that are defined within functions. They have local scope, which means that they can only be used within the functions that define them."	
+					Explain SQL AND OR statement with an example?	"In SQL, the AND & OR operators are used for filtering the data and getting precise results based on conditions. The AND and OR operators are used with the WHERE clause.
+
+These two operators are called conjunctive operators.
+
+AND Operator: This operator displays only those records where both conditions condition 1 and condition 2 evaluate to True.
+OR Operator: This operator displays the records where either one of the conditions condition 1 and condition 2 evaluates to True. That is, either condition1 is True or condition2 is True"	
+					COALESCE():	" COALESCE function in SQL returns the first non-NULL expression among its arguments. If all the expressions evaluate to null, then the COALESCE function will return null.
+Syntax:
+
+
+SELECT column(s), CAOLESCE(expression_1,….,expression_n)FROM table_name;"	
+					Aggregate functions	" Count()
+ Sum()
+ Avg()
+ Min()
+ Max()
+"	
+					what are sql joins?	"Type of Joins	Description
+-----------------------------
+INNER JOIN	Returns only the rows with matching values from both tables.
+LEFT JOIN	Returns all the rows from the left table and the matching rows from the right table.
+RIGHT JOIN	Returns all the rows from the right table and the matching rows from the left table.
+FULL OUTER JOIN	Returns all rows when there is a match in either the left or the right table. If there is no match, NULL values are returned for columns from the table without a match."	
+					Write a SQL query to print details of the Students whose FIRST_NAME ends with 'a'.	SELECT * FROM Student WHERE FIRST_NAME LIKE '%a'	
+					Write an SQL query to print details of the Students whose FIRST_NAME ends with ‘a’ and contains six alphabets	SELECT * FROM Student WHERE FIRST_NAME LIKE '_____a'	
+					Write an SQL query to fetch the count of Students having Major Subject ‘Computer Science’.	SELECT Major, COUNT(*) as TOTAL_COUNT FROM Student WHERE MAJOR = 'Computer Science';	
+					Write an SQL query to fetch the no. of Students for each MAJOR subject in the descending order	SELECT MAJOR, COUNT(MAJOR) from Student group by MAJOR order by COUNT(MAJOR) DESC;	
+					Write an SQL query to show the top n (say 5) records of Student table order by descending GPA	SELECT * from Student ORDER BY GPA DESC LIMIT 5;	
+					Write an SQL query to fetch the list of Students with the same GPA	SELECT s1.* FROM Student s1, Student s2 WHERE s1.GPA = s2.GPA AND s1.Student_id != s2.Student_id;	
+					Write an SQL query to fetch the names of Students who has highest GPA	SELECT FIRST_NAME, GPA FROM Student WHERE GPA = (SELECT MAX(GPA) FROM Student);	
+					Explain SQL Having statement?	"HAVING is used to specify a condition for a group or an aggregate function used in the select statement. The WHERE clause selects before grouping. The HAVING clause selects rows after grouping. Unlike the HAVING clause, the WHERE clause cannot contain aggregate functions
+
+SELECT Student, SUM(score) AS total FROM Marks GROUP BY Student
+HAVING total > 70"	
+					write sql query using inner join?	"An INNER JOIN returns only the rows with matching values from both tables.
+SELECT 
+  orders.order_id, 
+  orders.customer_id, 
+  goodreads.book_title, 
+  orders.quantity
+FROM goodreads
+INNER JOIN orders
+  ON goodreads.book_id = orders.book_id
+WHERE goodreads.price >= 20;
+"	
+					write sql query using left join?	"With LEFT JOIN, all rows from the left table are fetched, along with matching rows from the right table
+SELECT 
+  orders.order_id, 
+  deliveries.delivery_id, 
+  deliveries.delivery_date, 
+  deliveries.delivery_status
+FROM orders
+LEFT JOIN deliveries
+  ON orders.order_id = deliveries.order_id;
+"	
+					write sql query using right join?	" It returns all rows from the right table and pairs them with matching rows from the left table
+SELECT 
+  orders.order_id, 
+  deliveries.delivery_id, 
+  deliveries.delivery_date, 
+  deliveries.delivery_status
+FROM deliveries
+RIGHT JOIN orders
+  ON deliveries.order_id =  orders.order_id;"	
+					write sql query using full outer join?	"A FULL OUTER JOIN returns all rows when there is a match in either the left or the right table.
+SELECT 
+  orders.order_id, 
+  deliveries.delivery_id, 
+  deliveries.delivery_date, 
+  deliveries.delivery_status
+FROM orders
+FULL OUTER JOIN deliveries
+  ON orders.order_id = deliveries.order_id;"	
+					Write a query to fetch all employees who also hold the managerial position?	"SELECT E.EmpFname, E.EmpLname, P.EmpPosition 
+FROM EmployeeInfo E INNER JOIN EmployeePosition P ON
+E.EmpID = P.EmpID AND P.EmpPosition IN ('Manager');
+"	
+					Write a query to fetch the department-wise count of employees sorted by department’s count in ascending order?	"SELECT Department, count(EmpID) AS EmpDeptCount 
+FROM EmployeeInfo GROUP BY Department 
+ORDER BY EmpDeptCount ASC
+"	
+					Write a query find number of employees whose DOB is between 02/05/1970 to 31/12/1975 and are grouped according to gender?	SELECT COUNT(*), Gender FROM EmployeeInfo WHERE DOB BETWEEN '02/05/1970 ' AND '31/12/1975' GROUP BY Gender;	
+					Write a query to retrieve Departments who have less than 2 employees working in it?	SELECT DEPARTMENT, COUNT(EmpID) as 'EmpNo' FROM EmployeeInfo GROUP BY DEPARTMENT HAVING COUNT(EmpD) < 2;	
+					Write a SQL query that will provide you with the 10th-highest employee salary from an Employee table?	"SELECT salary
+
+FROM (
+
+    SELECT salary, ROW_NUMBER() OVER (ORDER BY salary DESC) AS row_num
+
+    FROM Employee
+
+) AS ranked_salary
+
+WHERE row_num = 10;"	
+					Write a query to create a new table which consists of data and structure copied from the other table?	"SELECT * INTO NewTable FROM EmployeeInfo ; or
+CREATE TABLE NewTable AS SELECT * FROM EmployeeInfo;"	
+					Write a query to retrieve the EmpFname and EmpLname in a single column as “FullName”. The first name and the last name must be separated with space.	SELECT CONCAT(EmpFname, ' ', EmpLname) AS 'FullName' FROM EmployeeInfo;	
