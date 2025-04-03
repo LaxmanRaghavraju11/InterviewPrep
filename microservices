@@ -1,0 +1,28 @@
+Technology	Topic	Type	Candidate Experience Level	Difficulty level	Question	Answer	Interview Category (L1/L2)
+1. JavaScript Deep Dive:	  Can you explain the concept of closures in JavaScript? How do they work, and where would you use them?						
+	  What is the event loop, and how does it handle asynchronous operations in JavaScript?						
+2. Performance Optimization:	  How would you improve the performance of a web application? Can you discuss specific techniques like lazy loading, code splitting, and tree shaking?						
+	  What tools do you use to analyze and monitor the performance of your front-end code?						
+3. React/Angular Specific:	  How do you manage state in a large React application? Can you compare the use of Redux versus Context API?						
+4. Responsive Design:	  What are the key principles of responsive web design? How do you approach building a layout that works on multiple devices?						
+	  Can you explain how CSS Grid and Flexbox differ in layout design? When would you use one over the other?						
+5. Security:	  What are common security vulnerabilities in front-end development, and how do you mitigate them?						
+	  Can you explain Cross-Site Scripting (XSS) and how to prevent it in your applications?						
+6. Testing and Debugging:	  How do you approach testing in your front-end applications? Can you discuss your experience with tools like Jest, Mocha, or Cypress?						
+	  Describe a challenging bug you encountered in a front-end application and how you resolved it.						
+7. APIs and Data Handling:	  How do you handle API responses in your applications? What strategies do you employ for error handling?						
+	  Can you explain the difference between REST and GraphQL? What are the advantages and disadvantages of each?						
+8. Version Control and Collaboration:	  How do you use Git in your workflow? Can you explain the importance of branching and merging?						
+	  Describe a situation where you had to collaborate with designers or back-end developers. How did you ensure effective communication?						
+9. Latest Trends and Technologies:	  What are some of the latest features in JavaScript (ES6+) that you find particularly useful?						
+	  How do you keep up with the latest trends and technologies in front-end development?						
+REact Hooks	Can you explain the purpose of `useEffect` and how it differs from lifecycle methods?						
+State Management	How do you manage complex state in React applications? Can you discuss the use of Context API and custom hooks?						
+Performance Optimization	What techniques do you use to optimize the performance of a React application?						
+Testing	How do you test React components? What libraries do you prefer and why?						
+Higher-Order Components (HOC)	Can you explain what Higher-Order Components are and provide an example of their use?						
+Error boundaries	What are error boundaries in React, and how do you implement them?						
+React Router	How do you handle routing in a React application? Can you explain nested routes and dynamic routing?						
+Server-Side Rendering (SSR)	What is Server-Side Rendering in React, and what are its benefits?						
+React's Concurrent Mode	Can you explain React's Concurrent Mode and its benefits?						
+Custom Hooks	How do you create and use custom hooks in React? Can you provide an example?						
