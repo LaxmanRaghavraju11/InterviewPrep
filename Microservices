@@ -1,0 +1,23 @@
+	Scenario: Service1-->Service2-->Service3
+1	Is it required to follow Microservice approach for an application always? If Not when to use monolith and when to go for micro services?
+2	"In Service1, we have a method called getCustomerOrders. To get the customer order details, service1 has to call service2 and service 2 calls service3.
+How does this inter communication happens? Is it Syncronus or Asyncronus?"
+3	"Say, we have 3 micro services. Service1, Service2 and Service3. To get response from Service 1, Service one needs service 2,3 to be up and running. But what happens if service3 is down/very slow?
+Will you get Exception? How do you handle it?"
+4	Now say, all the three services are upand runnung. We have a method called getCustomerOrders. To get the customer order details, service1 has to call service2 and service 2 calls service3. User is calling and response is also coming. But it is very slow. So how will you find out where is the Issue?
+5	"What will you do when someone hitting your application in specifc point to temporarity paralyze your application, what would be your approach?
+                                     OR
+What is Daniel Attack and How to handle it?"
+6	What are the different status of Retry model and how they works?
+7	As principal says, each micro service should be separate and self-contained service. So each microservices are having separate databases. So how do you handle distributed transaction in multiple databases?
+8	How do you handle Security accross Services?
+9	What are the design patterns you are following in your project?
+10	What is the benefit of Service Registry?
+11	What is gateway? When a request comes, how does system identify where to go/ where to route? 
+12	"What is bulkHead? How can we configure? 
+( Configure concurrent calls )"
+13	How to implement Fault Tolerance in Microservices?
+14	What is Domain-Driven Design (DDD) and how is it related to microservices?
+15	What is the main difference between SOA and the Microservices Architecture?
+16	What is a Client certificate? What is its usage?
+17	What is the use of containers in Microservices?
