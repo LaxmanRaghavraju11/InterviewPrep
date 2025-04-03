@@ -1,0 +1,11 @@
+S No 	Questions 	Type	Candidate Experience Level
+1	What is a Pod in Kubernetes?		
+2	How does Kubernetes handle container scaling		
+3	Explain the difference between a StatefulSet and a Deployment.		
+4	What advantages does Kubernetes have?		
+5	What is orchestration when it comes to software and DevOps		
+6	How are Kubernetes and Docker related?		
+7	What are the different services within Kubernetes?		
+8	What is the difference between a replica set and a replication controller?		
+9	What is a headless service?		
+10	How to display the detals of a pods		
